@@ -1,0 +1,65 @@
+
+.replyList{
+	.list{
+		border-bottom:1px solid #f0f0f0;
+		padding:10px 30px 10px 50px;
+		overflow: hidden;
+		background-color: #fff;
+		position:relative;
+		
+		.avatar{
+			position:absolute;
+			left:10px;
+			top:10px;
+			img{
+				width:30px;
+				height: 30px;
+				border-radius:3px;
+			}
+		}
+		.name{
+			color:#666;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 20px;
+		}
+		.floor{
+			color:#08c;
+			font-size: 11px;
+			line-height: 20px;
+		}
+		.replyCon{
+			color:#333;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		.operate{
+			position:absolute;
+			right:10px;
+			top:10px;
+			color:#ccc;
+			font-size: 12px;
+			span{
+				margin-right: 5px;
+				cursor: pointer;
+			}
+			.up0{
+				opacity: 0;
+			}
+			.up:hover i,.up0:hover i{
+				color:#000;
+			}
+			.up i.active,.up0 i.active{
+				color:#000;
+			}
+		}
+		&:hover .operate .up0{
+			opacity:1;
+		}
+
+		
+	}
+}
+.reply .CodeMirror{
+	height:150px;
+}
